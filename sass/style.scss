@@ -1,5 +1,19 @@
 * {
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
-}
+  }
+
+  body {
+	background-color: darkgrey;
+	margin: auto;
+	padding: 0;
+	border: 1px solid grey;
+	width: 500px;
+  }
+
+  h1 {
+	text-align: center;
+  }
+
+  .contactForm {
+	display: inline-grid;
+  }
