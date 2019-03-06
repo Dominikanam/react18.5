@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+
+body { background-color: darkgrey; margin: auto; padding: 0; border: 1px solid grey; width: 500px; }
+
+h1 { text-align: center; }
+
+.contactForm { display: -ms-inline-grid; display: inline-grid; }
