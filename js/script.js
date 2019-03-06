@@ -46,20 +46,20 @@ var contacts = [
 		React.createElement('form', {className: 'contactForm'},
 		  React.createElement('input', {
 			type: 'text',
-			placeholder: 'Imię',
+			placeholder: 'Name',
 			value: this.props.contact.firstName,
 		  }),
 		  React.createElement('input', {
 			type: 'text',
-			placeholder: 'Nazwisko',
+			placeholder: 'Surname',
 			value: this.props.contact.lastName,
 		  }),
 		  React.createElement('input', {
 			type: 'email',
-			placeholder: 'Email',
+			placeholder: 'E-mail',
 			value: this.props.contact.email,
 		  }),
-		  React.createElement('button', {type: 'submit'}, "Dodaj kontakt")
+		  React.createElement('button', {type: 'submit'}, "Add contact")
 		)
 	  )
 	},
@@ -93,9 +93,9 @@ var contacts = [
 			className: 'contactImage',
 			src: 'https://cdn4.iconfinder.com/data/icons/small-n-flat/24/user-alt-128.png'
 		  }),
-		  React.createElement('p', {className: 'contactLabel'}, 'Imię: ' + this.props.item.firstName),
-		  React.createElement('p', {className: 'contactLabel'}, 'Nazwisko: ' + this.props.item.lastName),
-		  React.createElement('a', {className: 'contactEmail', href: 'mailto:' + this.props.item.email},
+		  React.createElement('p', {className: 'contactLabel'}, this.props.item.firstName),
+		  React.createElement('p', {className: 'contactLabel'}, this.props.item.lastName),
+		  React.createElement('a', {className: 'contactEmail', href: 'mailto:' +  this.props.item.email},
 			this.props.item.email
 		  )
 		)
